@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: aquamarine;
+            /* display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center; */
+            margin: 0;
+            padding: 0;
+        }
+
+        .header {
+            font-family: 'Times New Roman';
+            color: black;
+            font-weight: bold;
+            font-size: 3rem;
+        }
+
+        .middle {
+            color: blue;
+            font-family: 'Times New Roman';
+            font-weight: bold;
+            font-size: 3rem;
+        }
+
+        .containers {
+            height: 30vh;
+            width: 100vw;
+            display: flex;
+            justify-content: center;
+            /* align-items: center; */
+            gap: 20px;
+        }
+
+        .item {
+            height: 30vh;
+            width: 25vw;
+            background-color: white;
+            overflow: hidden;
+            border-radius: 15px;
+        }
+
+        .item img {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+        }
+
+        .navbar {
+            height: 10vh;
+            width: 100%;
+            background-color: rgb(93, 44, 44);
+            color: white;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .navbar h1{
+            margin-left: 10px;
+        }
+
+        .sideTitle {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: x-large;
+            font-weight: bold;
+        }
+
+        .sideTitle p {
+            margin-left: 15px;
+        }
+
+        .sideTitle button {
+            margin-left: 15px;
+            margin-right: 10px;
+            padding: 20px, 15px, 20px, 15px;
+            border-radius: 10px;
+            font-size: x-large;
+        }
+
+        .container{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .fullConatiners{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 50vh;
+            width: 100vw;
+        }
+
+        .fullConatiners h1{
+            font-family: 'Times New Roman';
+            font: bold;
+        }
+        .containers2 span{
+            color: blue;
+        }
+
+        .containers3{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .profile{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            /* border: 2px solid black; */
+            border-radius: 10px;
+            background-color: rgb(138, 138, 212);
+            height: 25vh;
+            width: 20vw;
+        }
+
+        .profile img{
+            height: 80%;
+            width: 100%;
+            object-fit:cover;
+            /* color: white; */
+            border-top-left-radius: 10px;
+        }
+
+        .profile p{
+            color: white;
+        }
+
+
+        @media screen and (max-width:1300px) {
+
+            .containers {
+                display: flex;
+                gap: 20px;
+            }
+
+            .item {
+                height: 30vh;
+                width: 30vw;
+                background-color: white;
+                overflow: hidden;
+                border-radius: 15px;
+            }
+        }
+
+        @media screen and (max-width:900px) {
+
+            .containers {
+                display: flex;
+                gap: 20px;
+            }
+
+            .item {
+                height: 30vh;
+                width: 30vw;
+                background-color: white;
+                overflow: hidden;
+                border-radius: 15px;
+            }
+
+            .sideTitle{
+                display: none;
+            }
+        }
+
+        @media screen and (max-width:600px) {
+
+            .containers {
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+            }
+
+            .item {
+                width: 80vw;
+            }
+        }
+
+        .footer{
+            height: 20vh;
+            width: 100%;
+            background-color: gray;
+            display: flex;
+            justify-content: space-between;
+            padding: 10px;
+        }
+
+        .col1{
+            display: flex;
+            flex-direction: column;
+            gap: none;
+        }
+
+        .col2{
+            display: flex;
+            flex-direction: column;
+        }
+
+        .col2 p{
+            font-size: large;
+        }
+
+        .col3{
+            display: flex;
+            flex-direction: row;
+        }
+        .circle{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 5vh;
+            width: 3vw;
+            border: 1px solid black;
+            border-radius: 50%;
+            margin-left: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="navbar">
+        <div class="tittle">
+            <h1>Hospital Tracker</h1>
+        </div>
+        <div class="sideTitle">
+            <p>Home</p>
+            <p>Desk</p>
+            <p>Work</p>
+            <p>Review</p>
+            <button>logout</button>
+        </div>
+    </div>
+
+    <div class="container">
+        <div>
+            <h1 class="header">Service <span class="middle">Available</span></h1>
+        </div>
+        <div class="containers">
+            <div class="item"> <img src="fotos-7jW32X-esgY-unsplash.jpg" alt=""></div>
+            <div class="item"> <img src="fotos-Bmcag6sJMeA-unsplash.jpg" alt=""></div>
+            <div class="item"> <img src="fotos-V5seIsOiZx0-unsplash.jpg" alt=""></div>
+        </div>
+    </div>
+
+    <div class="fullConatiners">
+        <div class="containers2">
+            <h1>Reason why <span>we are here....</span></h3>
+        </div>
+        <div class="containers3">
+            <div class="profile"> 
+                <img src="296c3d8543d549d9d6f1d93557e0a6ca.jpg" alt="">
+                <p>Transportation</p>
+            </div>
+            <div class="profile">
+                <img src="0x0.webp" alt="">
+                <p>Hospitality</p>
+            </div>
+            <div class="profile">
+                <img src="360_F_725273858_knVtJ9nAyeR6UeMEp9bxquKoz0Bf2QVS.jpg" alt="">
+                <p>Canteen</p>
+            </div>
+            <div class="profile">
+                <img src="images.jpeg" alt="">
+                <p>Rest Room</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="col1">
+            <h1>Hospital tracker</h1>
+            <p>Track the output you are looking at....</p>
+            <p>hospital@tracker.com</p>
+        </div>
+        <div class="col2">
+            <p>Home</p>
+            <p>Service</p>
+            <p>Available</p>
+        </div>
+        <div class="col3">
+            <div class="circle">F</div>
+            <div class="circle">@</div>
+            <div class="circle">L</div>
+        </div>
+    </div>
+</body>
+</html>
